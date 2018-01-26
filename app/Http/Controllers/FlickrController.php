@@ -1,14 +1,18 @@
 <?php
+
 namespace App\Http\Controllers;
+
 use App\Http\Requests\FlickrPhotoRequest;
 use App\Http\Requests\FlickrSearchRequest;
 use App\Repositories\FlickrRepositoryContract;
+
 class FlickrController extends Controller
 {
     /**
      * @var FlickrRepositoryContract
      */
     protected $flickr;
+
     /**
      * Initialize Flickr API using DI approach.
      *
@@ -19,6 +23,7 @@ class FlickrController extends Controller
     {
         $this->flickr = $flickr;
     }
+
     /**
      * Display search page.
      *
@@ -26,8 +31,9 @@ class FlickrController extends Controller
      */
     public function index()
     {
-        return view('flickr.index');
+        return view('welcome');
     }
+
     /**
      * Search photos
      *
@@ -37,12 +43,11 @@ class FlickrController extends Controller
      */
     public function search(FlickrSearchRequest $request)
     {
-        $request='$request';
-        //$photos = $this->flickr->searchPhotos($request, 20);
-        $photos = $this->flickr->searchPhotos("arbol", 20);
-        return view('index', compact('photos'));
-        //return $request;
+        $photos = $this->flickr->searchPhotos($request, 20);
+
+        return view('flickr.search', compact('photos'));
     }
+
     /**
      * Display the specified resource.
      *
@@ -52,6 +57,7 @@ class FlickrController extends Controller
     public function show(FlickrPhotoRequest $request, $id)
     {
         $photo = $this->flickr->findOrThrowException($id);
+
         return view('flickr.photo', compact('photo'));
     }
 }
