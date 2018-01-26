@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', ['as' => 'welcome', 'uses' => 'FlickrController@search']);
+//Route::get('flickr/{id}', ['as' => 'flickr.photo', 'uses' => 'FlickrController@show'])->where(['id' => '[0-9]+']);
+//Route::get('flickr', ['as' => 'flickr.index', 'uses' => 'FlickrController@index']);

@@ -44,6 +44,7 @@
     <![endif]-->
 
 <script src="js/assets/modernizr-2.8.3.min.js" type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -88,13 +89,14 @@
 
 <!-- header -->
 
+
 <main class="main-wrapper" id="container"> 
-  
   <!-- image Gallery -->
+ 
   <div class="wrapper">
     <div class="">
-      <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-3 masonry">
-        <li class="masonry-item grid">
+      <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-5 masonry">
+        <li class="masonry-item grid bat" id="bat">
           <figure class="effect-sarah"> <img src="//c1.staticflickr.com/8/7554/26960020535_36eeb8448c_z.jpg" alt="" />
             <figcaption>
               <h2>Photo <span>Title</span></h2>
