@@ -1,10 +1,7 @@
 <?php
-
 namespace App\Repositories;
-
 use JeroenG\Flickr\Flickr;
 use App\Http\Requests\FlickrSearchRequest;
-
 interface FlickrRepositoryContract
 {
     /**
@@ -13,7 +10,6 @@ interface FlickrRepositoryContract
      * @return Flickr
      */
     public function getFlickrApiObj();
-
     /**
      * Find a photo
      *
@@ -21,7 +17,6 @@ interface FlickrRepositoryContract
      * @return mixed
      */
     public function findOrThrowException($id);
-
     /**
      * Search Flickr Photos by tags
      *

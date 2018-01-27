@@ -589,16 +589,16 @@
         },
         {
             "name": "jeroen-g/flickr",
-            "version": "v1.1",
+            "version": "V1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jeroen-G/Flickr.git",
-                "reference": "75177dc769cb8db5428dc3008140be6c6e3ae5f0"
+                "reference": "8ee532386bc3e02422e356cd6db6b1417ffce2bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jeroen-G/Flickr/zipball/75177dc769cb8db5428dc3008140be6c6e3ae5f0",
-                "reference": "75177dc769cb8db5428dc3008140be6c6e3ae5f0",
+                "url": "https://api.github.com/repos/Jeroen-G/Flickr/zipball/8ee532386bc3e02422e356cd6db6b1417ffce2bc",
+                "reference": "8ee532386bc3e02422e356cd6db6b1417ffce2bc",
                 "shasum": ""
             },
             "require": {
@@ -617,7 +617,7 @@
                         "JeroenG\\Flickr\\FlickrServiceProvider"
                     ],
                     "aliases": {
-                        "Activity": "JeroenG\\Flickr\\FlickrLaravelFacade"
+                        "Flickr": "JeroenG\\Flickr\\FlickrLaravelFacade"
                     }
                 }
             },
@@ -646,7 +646,7 @@
                 "laravel",
                 "php"
             ],
-            "time": "2017-10-23T12:53:11+00:00"
+            "time": "2018-01-26T21:46:54+00:00"
         },
         {
             "name": "laravel/framework",

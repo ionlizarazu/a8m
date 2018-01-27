@@ -1,10 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Http\Requests\FlickrPhotoRequest;
-use App\Http\Requests\FlickrSearchRequest;
-use App\Repositories\FlickrRepositoryContract;
+use Illuminate\Http\Request;
+use JeroenG\Flickr;
 
 class FlickrController extends Controller
 {
@@ -19,9 +17,9 @@ class FlickrController extends Controller
      * FlickrController constructor.
      * @param FlickrRepositoryContract $flickr
      */
-    public function __construct(FlickrRepositoryContract $flickr)
+    public function __construct()
     {
-        $this->flickr = $flickr;
+       $this->flickr = new Flickr\Flickr(new Flickr\Api(env('FLICKR_KEY'), env('FLICKR_API_FORMAT')));
     }
 
     /**
@@ -31,7 +29,7 @@ class FlickrController extends Controller
      */
     public function index()
     {
-        return view('welcome');
+        return view('home.home');
     }
 
     /**
@@ -41,11 +39,20 @@ class FlickrController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      * @throws \Exception
      */
-    public function search(FlickrSearchRequest $request)
+    public function search(Request $request)
     {
-        $photos = $this->flickr->searchPhotos($request, 20);
+         $results = $this->flickr->request('flickr.galleries.getList', [
+            'api_key' => env('FLICKR_KEY'),
+            'user_id' => env('FLICKR_USER_ID')
+        ]);
+         return view('home.home');
 
-        return view('flickr.search', compact('photos'));
+
+
+        //return dd($results);
+        //$photos = $this->flickr->searchPhotos($request, 20);
+
+        //return view('flickr.search', compact('photos'));
     }
 
     /**

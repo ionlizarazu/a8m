@@ -12,9 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return View::make('home.home');
 });
 
-Route::get('/', ['as' => 'welcome', 'uses' => 'FlickrController@search']);
+Route::get('/', ['as' => 'home', 'uses' => 'FlickrController@search']);
 //Route::get('flickr/{id}', ['as' => 'flickr.photo', 'uses' => 'FlickrController@show'])->where(['id' => '[0-9]+']);
 //Route::get('flickr', ['as' => 'flickr.index', 'uses' => 'FlickrController@index']);
