@@ -49,8 +49,6 @@
 <script>window.jQuery || document.write('<script src="{{ asset('js/assets/jquery.min.js')}}"><\/script>')</script> 
 <script src="{{ asset('js/assets/plugins.js')}}" type="text/javascript"></script> 
 <script src="{{ asset('js/assets/bootstrap.min.js')}}" type="text/javascript"></script> 
-<script src="{{ asset('https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false')}}"></script> 
-<script src="{{ asset('js/maps.js')}}" type="text/javascript"></script> 
 <script src="{{ asset('js/custom.js')}}" type="text/javascript"></script> 
 <script src="{{ asset('js/jquery.contact.js')}}" type="text/javascript"></script> 
 <script src="{{ asset('js/main.js')}}" type="text/javascript"></script> 

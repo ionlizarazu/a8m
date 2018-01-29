@@ -1,3 +1,6 @@
+<div style="width: 500px; height: 500px;">
+    {!! Mapper::render() !!}
+</div>
 <!-- image Gallery -->
 <div class="wrapper">
     <div class="">

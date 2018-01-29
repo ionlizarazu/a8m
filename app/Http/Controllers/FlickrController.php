@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use JeroenG\Flickr;
+use Mapper;
 
 class FlickrController extends Controller
 {
@@ -41,6 +42,8 @@ class FlickrController extends Controller
      */
     public function search(Request $request)
     {
+         Mapper::map(53.381128999999990000, -1.470085000000040000);
+         Mapper::polyline([['latitude' => 53.381128999999990000, 'longitude' => -1.470085000000040000], ['latitude' => 52.381128999999990000, 'longitude' => 0.470085000000040000]], ['editable' => 'true']);
          $results = $this->flickr->request('flickr.galleries.getList', [
             'api_key' => env('FLICKR_KEY'),
             'user_id' => env('FLICKR_USER_ID')
