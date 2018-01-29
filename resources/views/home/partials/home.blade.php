@@ -1,4 +1,4 @@
-<div style="width: 500px; height: 500px;">
+<div style="width: 100%; height: 800px;">
     {!! Mapper::render() !!}
 </div>
 <!-- image Gallery -->
