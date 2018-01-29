@@ -7,11 +7,11 @@
      <div class="grid">
          <div id="js-filters-masonry" class="cbp-l-filters-work">
             <div data-filter=".Irteera_eta_Meta" class="cbp-filter-item-active cbp-filter-item">
-               Zona1
+               Irteera eta Meta
                <div class="cbp-filter-counter"></div>
             </div>
-            <div data-filter=".zona2" class="cbp-filter-item">
-               Zona2
+            <div data-filter=".Pagamendi" class="cbp-filter-item">
+               Pagamendi
                <div class="cbp-filter-counter"></div>
             </div>
             <div data-filter=".zona3" class="cbp-filter-item">
@@ -31,25 +31,21 @@
 
       <div id="js-grid-masonry" class="cbp">
         @foreach($titlePhotos as $zones)
-        <div class="row">
             @foreach($zones as $key =>$photos)
                  @foreach($photos as $photo)
-                 <div class="cbp-item {{ $key }}">
-                  <a href="{{ $photo }}" class="cbp-caption cbp-lightbox">
-                    <div>
-                       <img src="{{ $photo }}" alt="">
+                     <div class="cbp-item {{ $key }}">
+                      <a href="{{ $photo }}" class="cbp-caption cbp-lightbox">
+                        <div>
+                           <img src="{{ $photo }}" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            
+                        </div>
+                      </a>       
                     </div>
-                    <div class="cbp-caption-activeWrap">
-                        
-                    </div>
-                  </a>       
-                </div>
                  @endforeach
             @endforeach
-        </div>
         @endforeach
       </div>
     </div>
 </div>
-
-            
