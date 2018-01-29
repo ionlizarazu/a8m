@@ -57,17 +57,11 @@ class FlickrController extends Controller
                 'gallery_id' => $gallery['gallery_id']
             ]);  
            foreach ($imgList->photos['photo'] as $key => $img) {
-            $imgUrls[] = "http://farm".$img['farm'].".staticflickr.com/"."/".$img['server']."/".$img['id']."_".$img['secret'].".jpg";  
+            $imgUrls[] = "http://farm".$img['farm'].".staticflickr.com/"."/".$img['server']."/".$img['id']."_".$img['secret']."_c".".jpg";  
             }
             $titlePhotos[] =array($gallery['title']['_content'] => $imgUrls) ;
          }
         return view('home.home')->with('titlePhotos', $titlePhotos);
-
-
-        //return dd($results);
-        //$photos = $this->flickr->searchPhotos($request, 20);
-
-        //return view('flickr.search', compact('photos'));
     }
 
     /**
