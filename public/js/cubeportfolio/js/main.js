@@ -5,7 +5,7 @@
     $('#js-grid-masonry').cubeportfolio({
         filters: '#js-filters-masonry',
         layoutMode: 'grid',
-        defaultFilter: '.zona1,.lisos',
+        defaultFilter: '.Irteera_eta_Meta,.lisos',
         animationType: 'slideDelay',
         gapHorizontal: 20,
         gapVertical: 20,
