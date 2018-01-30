@@ -54,7 +54,7 @@
 <script src="{{ asset('js/main.js')}}" type="text/javascript"></script> 
 <script type="text/javascript" src="{{ asset('js/cubeportfolio/js/jquery.cubeportfolio.min.js') }}"></script>
 <!-- init cubeportfolio -->
-<script type="text/javascript" src="{{ asset('js/cubeportfolio/js/main.js') }}"></script> 
+<!-- <script type="text/javascript" src="{{ asset('js/cubeportfolio/js/main.js') }}"></script> -->
 <script src="{{ asset('js/jquery.nicescroll.min.js')}}" type="text/javascript"></script>
 </body>
 </html>
