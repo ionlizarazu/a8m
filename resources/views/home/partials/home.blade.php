@@ -10,46 +10,41 @@
      <div class="grid">
          <div id="js-filters-masonry" class="cbp-l-filters-work">
             <?php $i=0; ?>
-            @foreach($titlePhotos as $zones)
-              @foreach($zones as $key => $photos)
+            @foreach($galleryImages as $zones)
                 @if ($i == 0)     
-                <?php $firstkey = $key;?>
-                <div data-filter=".{{ $key }}" class="cbp-filter-item-active cbp-filter-item">
-                  {{$galleries[$i][0]}}
+                <?php $firstkey = $zones['gallery_id'];?>
+                <div data-filter=".{{ $zones['gallery_id'] }}" class="cbp-filter-item-active cbp-filter-item">
+                  {{ $zones['title'] }}
                   <div class="cbp-filter-counter"></div>               
                 </div>  
                 @else
-                <div data-filter=".{{ $key }}" class="cbp-filter-item">
-                {{$galleries[$i][0]}}
+                <div data-filter=".{{ $zones['gallery_id'] }}" class="cbp-filter-item">
+                  {{ $zones['title'] }}
                   <div class="cbp-filter-counter"></div>
                 </div>
                 @endif
                 <?php $i++; ?>
-              @endforeach
             @endforeach
           </div>
       </div>
 
       <div id="js-grid-masonry" class="cbp">
-        @foreach($titlePhotos as $zones)
-            @foreach($zones as $key =>$photos)
-                 @foreach($photos as $title => $photo)
-                     <div class="cbp-item {{ $key }}">
-                      <a href="{{ $photo }}" class="cbp-caption cbp-lightbox">
-                        <div>
-                           <img src="{{ $photo }}" alt="">
-                        </div>
-                        <div class="cbp-caption-activeWrap">
-                            <div class="cbp-l-caption-alignLeft">
-                                <div class="cbp-l-caption-body">
-                                    <div class="cbp-l-caption-title">{{$title}}</div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                      </a>       
-                    </div>
-                 @endforeach
+        @foreach($galleryImages as $zones)              
+            @foreach($zones['images'] as $photos)
+              <div class="cbp-item {{ $zones['gallery_id'] }}">
+                <a href="{{ $photos['url'] }}" class="cbp-caption cbp-lightbox">
+                  <div>
+                    <img src="{{ $photos['url'] }}" alt="">
+                  </div>
+                  <div class="cbp-caption-activeWrap">
+                    <div class="cbp-l-caption-alignLeft">
+                      <div class="cbp-l-caption-body">
+                        <div class="cbp-l-caption-title">{{$photos['title']}}</div>
+                      </div>
+                    </div>        
+                  </div>
+                </a>       
+              </div>
             @endforeach
         @endforeach
       </div>

@@ -5,7 +5,7 @@
     $('#js-grid-masonry').cubeportfolio({
         filters: '#js-filters-masonry',
         layoutMode: 'grid',
-        defaultFilter: '.Irteera_eta_meta',
+        defaultFilter: '',
         animationType: 'slideDelay',
         gapHorizontal: 20,
         gapVertical: 20,

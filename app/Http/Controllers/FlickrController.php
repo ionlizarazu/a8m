@@ -48,21 +48,19 @@ class FlickrController extends Controller
             'api_key' => env('FLICKR_KEY'),
             'user_id' => env('FLICKR_USER_ID')
         ]);
-         $galleries=array();
-         $titlePhotos=array();
-         foreach ($galleryList->galleries['gallery'] as $key => $gallery) {
-            $imgUrls=array();
+         $galleryImages=array();
+         foreach ($galleryList->galleries['gallery'] as $gallery) {
+            $imgTitleUrls=array();
             $imgList = $this->flickr->request('flickr.galleries.getPhotos', [
                 'api_key' => env('FLICKR_KEY'),
                 'gallery_id' => $gallery['gallery_id']
             ]);  
-            foreach ($imgList->photos['photo'] as $key => $img) {
-                $imgUrls[$img['title']] = "http://farm".$img['farm'].".staticflickr.com/"."/".$img['server']."/".$img['id']."_".$img['secret']."_c".".jpg";  
+            foreach ($imgList->photos['photo'] as $img) {
+                $imgTitleUrls[] = array('title'=>$img['title'],'url'=>"http://farm".$img['farm'].".staticflickr.com/"."/".$img['server']."/".$img['id']."_".$img['secret']."_c".".jpg");  
             }
-            $titlePhotos[] =array($gallery['gallery_id'] => $imgUrls);
-            $galleries[] = array($gallery['title']['_content']);
+            $galleryImages[] =array('gallery_id'=>$gallery['gallery_id'],'title'=>$gallery['title']['_content'],'images' => $imgTitleUrls);
          }
-        return view('home.home')->with('titlePhotos', $titlePhotos)->with('galleries', $galleries);
+         return view('home.home')->with('galleryImages', $galleryImages);
     }
 
     /**
