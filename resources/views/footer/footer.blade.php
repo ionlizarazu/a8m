@@ -1,7 +1,7 @@
 <!-- footer -->
 
 <footer class="footer">
-  <h3>Stay connected with us</h3>
+  <h3>Antzuolako 8 miliak</h3>
   <div class="container footer-bot">
     <div class="row"> 
       
