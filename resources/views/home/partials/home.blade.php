@@ -1,9 +1,6 @@
 <script src="{{ asset('https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js')}}"></script> 
 <script type="text/javascript" src="{{ asset('js/cubeportfolio/js/jquery.cubeportfolio.min.js') }}"></script>
 
-<div style="width: 100%; height: 800px;">
-    {!! Mapper::render() !!}
-</div>
 <!-- image Gallery -->
 <div class="wrapper">
     <div class="">

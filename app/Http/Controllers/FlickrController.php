@@ -29,9 +29,15 @@ class FlickrController extends Controller
      *
      * @throws \Exception
      */
-    public function index()
+    public function route()
     {
-        return view('home.home');
+        Mapper::map(43.104551, -2.361174, ['marker' => false]);
+
+        $json = Storage::disk('local')->get('coordinates.json');
+        $coordinates = json_decode($json, true);
+
+        Mapper::polyline($coordinates['coordinates']);
+        return view('route.route');
     }
 
     /**
@@ -43,12 +49,6 @@ class FlickrController extends Controller
      */
     public function search(Request $request)
     {
-        Mapper::map(43.104551, -2.361174, ['marker' => false]);
-
-        $json = Storage::disk('local')->get('coordinates.json');
-        $coordinates = json_decode($json, true);
-
-         Mapper::polyline($coordinates['coordinates']);
          $galleryList = $this->flickr->request('flickr.galleries.getList', [
             'api_key' => env('FLICKR_KEY'),
             'user_id' => env('FLICKR_USER_ID')

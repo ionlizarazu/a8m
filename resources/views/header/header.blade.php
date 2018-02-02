@@ -15,10 +15,11 @@
           <div class="cross"> <span class="linee linea1"></span> <span class="linee linea2"></span> <span class="linee linea3"></span> </div>
           <div class="main-menu">
             <ul>
-              <li class="{{ Request::is('/') ? "active" : "" }}"><a href="{{url('/')}}">Home</a></li>
-              <li class="{{ Request::is('/about') ? "active" : "" }}><a href="about.html">About</a></li>
-              <li class="{{ Request::is('/blog') ? "active" : "" }}><a href="blog.html">blog</a></li>
-              <li class="{{ Request::is('/contact') ? "active" : "" }}><a href="contact.html">contact</a></li>
+              <li class="{{ Request::is('/') ? "active" : "" }}"><a href="{{url('/')}}">Hasiera</a></li>
+              <li class="{{ Request::is('/route') ? "active" : "" }}""><a href="{{url('route')}}">Ibilbidea</a></li>
+              <li class="{{ Request::is('/about') ? "active" : "" }}""><a href="about.html">About</a></li>
+              
+              <li class="{{ Request::is('/contact') ? "active" : "" }}""><a href="contact.html">contact</a></li>
             </ul>
           </div>
         </div>
