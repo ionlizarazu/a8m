@@ -1,6 +1,5 @@
-<main class="main-wrapper-inner" id="container">
-                <div class="container">
-                    <div class="wrapper-inner">
+
+                    <div class="wrapper">
                         <!-- details-image -->
                         <!-- content -->
                         <section>
@@ -55,5 +54,4 @@
                         </div>
                         <!-- content -->
                     </div>
-                </div>
-            </main>
+@include('footer.partners') 

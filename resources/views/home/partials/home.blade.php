@@ -45,9 +45,7 @@
             @endforeach
         @endforeach
       </div>
-    </div>
-</div>
-<script type="text/javascript">
+      <script type="text/javascript">
 $('#js-grid-masonry').cubeportfolio({
     filters: '#js-filters-masonry',
     layoutMode: 'grid',
@@ -82,3 +80,6 @@ $('#js-grid-masonry').cubeportfolio({
     lightboxTitleSrc: 'data-title',
 });
 </script> 
+          @include('footer.partners') 
+    </div>
+</div>

@@ -9,7 +9,7 @@
 @endsection 
 
 @section('content')
-    @include('home.partials.home')   
+    @include('home.partials.home')    
 @endsection
 
 @section('footer')

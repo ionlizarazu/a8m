@@ -1,5 +1,5 @@
-<div class="container">
-  <div class="wrapper-inner">
+
+  <div class="wrapper">
 
       <!-- contact -->
 
@@ -77,10 +77,9 @@
       </div>
 
       <!-- contact -->
+      @include('footer.partners') 
 
   </div>
-
-</div>
 
 <script src="{{ asset('https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js')}}"></script> 
 
