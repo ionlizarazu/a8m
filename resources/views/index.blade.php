@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-<title>:: Picxa :: A Photographer Portfolio Template</title>
+<title>Antzuolako 8 miliak</title>
 <!-- Normalize -->
 <link rel="stylesheet" href="{{ asset('css/assets/normalize.css') }}" type="text/css">
 <!-- Bootstrap -->

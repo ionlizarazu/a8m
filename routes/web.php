@@ -20,5 +20,8 @@ Route::get('/route', ['as' => 'route', 'uses' => 'FlickrController@route']);
 Route::get('/about',function () {
     return View::make('about.about');
 });
+Route::get('/inscription',function () {
+    return View::make('inscription.inscription');
+});
 //Route::get('flickr/{id}', ['as' => 'flickr.photo', 'uses' => 'FlickrController@show'])->where(['id' => '[0-9]+']);
 //Route::get('flickr', ['as' => 'flickr.index', 'uses' => 'FlickrController@index']);
