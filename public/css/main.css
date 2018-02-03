@@ -196,7 +196,8 @@ z-index:2;transition: width 0.3s; z-index:1}
 
 ========================================================================== */
 
-.main-wrapper,.main-wrapper-inner{background-color:#FFF;position:relative; z-index:6;border-top: #343434 solid;}
+.main-wrapper,.main-wrapper-inner{background-color:#FFF;position:relative; z-index:6;}
+.main-wrapper{border-top: #343434 solid;}
 
 .wrapper{background-color:#FFF; padding:0 25px;position:relative; z-index:6; margin-bottom:396px}
 
