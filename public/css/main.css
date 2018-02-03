@@ -65,8 +65,10 @@ Version: 1.0
 @import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&subset=devanagari,latin-ext';
 
 @import 'https://fonts.googleapis.com/css?family=Oranienbaum&subset=cyrillic,cyrillic-ext,latin-ext';
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
 
-@font-face {font-family: 'Poppins', sans-serif;font-family: 'Oranienbaum', serif;}
+@font-face {font-family: 'Poppins', sans-serif;font-family: 'Oranienbaum', serif;font-family: 'Caveat Brush', cursive;}
+@font-face {font-family: 'Karam'; src: url('/../fonts/Karam.otf');}
 
 /* ==========================================================================
 
@@ -82,7 +84,7 @@ audio, canvas, video {display: inline-block;*display:inline;*zoom:1}
 
 blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
 
-h1,h2,h3,h4,h5,h6{ color:#E9E9E9}
+h1,h2,h3,h4,h5,h6{ color:#454545}
 
 ::-moz-selection {background: #222222;color:#ffF;text-shadow: none;}
 
@@ -120,7 +122,7 @@ a:focus, img:focus, button:focus, .btn:focus {outline:none;text-decoration: none
 
 .menu.over{background-color:rgba(255,255,255,0.8);}
 
-.nav-icon{ float:right;font-family: 'Oranienbaum', serif; display:block; position:relative; text-transform:uppercase; font-size:14px; letter-spacing:4px; color:#222222;}
+.nav-icon{ float:right;font-family: 'Caveat Brush', serif; display:block; position:relative; text-transform:uppercase; font-size:14px; letter-spacing:4px; color:#222222;}
 
 .menu {transition: all 0.40s ease-out; width:60px; height:30px; cursor:pointer; position:absolute; right:0; top:0; z-index:5; border-radius:100%;}
 
@@ -174,11 +176,11 @@ a:focus, img:focus, button:focus, .btn:focus {outline:none;text-decoration: none
 
 .main-menu ul {list-style-type: none; text-align:center; margin:0; padding:0; }
 
-.main-menu ul li {width:100%; display:inline-block;font-family: 'Oranienbaum', serif; text-transform:uppercase; font-size:30px; margin-bottom:30px; font-weight:400; position:relative;z-index:1;  transition: all 0.400s;transition-delay: 0.370s;}
+.main-menu ul li {width:100%; display:inline-block;font-family: 'Caveat Brush', serif; text-transform:uppercase; font-size:30px; margin-bottom:30px; font-weight:400; position:relative;z-index:1;  transition: all 0.400s;transition-delay: 0.370s;}
 
 .main-menu ul li{ position:relative; ; }
 
-.main-menu ul li:after {content: "";position:absolute;bottom:52%; left:0; right:0; margin:0 auto;width:0; height:1px;background:#222222;
+.main-menu ul li:after {content: "";position:absolute; left:0; right:0; margin:0 auto;width:0; height:1px;background:#222222;
 
 z-index:2;transition: width 0.3s; z-index:1}
 
@@ -194,7 +196,7 @@ z-index:2;transition: width 0.3s; z-index:1}
 
 ========================================================================== */
 
-.main-wrapper,.main-wrapper-inner{background-color:#FFF;position:relative; z-index:6;}
+.main-wrapper,.main-wrapper-inner{background-color:#FFF;position:relative; z-index:6;border-top: #343434 solid;}
 
 .wrapper{background-color:#FFF; padding:0 25px;position:relative; z-index:6; margin-bottom:396px}
 
@@ -204,7 +206,7 @@ z-index:2;transition: width 0.3s; z-index:1}
 
 ========================================================================== */
 
-.footer{ background-color:#222222; position:fixed; z-index:1; width:100%; bottom:0; left:0; right:0; padding-top:104px; padding-bottom:115px; text-align:center; color:#999999; font-size:10px; letter-spacing:1px; font-weight:400}
+.footer{ background-color:#222222; position:fixed; z-index:1; width:100%; bottom:0; left:0; right:0; padding-top:0%; padding-bottom:115px; text-align:center; color:#999999; font-size:10px; letter-spacing:1px; font-weight:400}
 
 .footer a{ color:#999999;}
 
@@ -212,9 +214,9 @@ z-index:2;transition: width 0.3s; z-index:1}
 
 .footer img{ margin:0 auto}
 
-.footer h3{ text-align:center; color:#FFF;font-family: 'Oranienbaum', serif; text-transform:uppercase; letter-spacing:2px; font-size:21px; position:relative}
+.footer h3{ text-align:center; color:#FFF;font-family: 'Caveat Brush', serif; text-transform:uppercase; letter-spacing:2px; font-size:21px; position:relative}
 
-.footer h3:after{ content:""; margin:0 auto; display:block; position:absolute; bottom:-20px; left:0; right:0; width:63px; height:3px; background-color:#FFF}
+.footer h3:after{ content:""; margin:0 auto; display:block; position:absolute; bottom:-20px; left:0; right:0;  height:3px; background-color:#FFF}
 
 .footer p{ line-height:12px; font-weight:300}
 
@@ -238,13 +240,13 @@ z-index:2;transition: width 0.3s; z-index:1}
 
 .main-wrapper-inner{ margin-bottom:396px}
 
-.wrapper-inner{ margin:auto; width:100%; max-width:1031px; padding-top:71px; padding-bottom:20px}
+.wrapper-inner{ margin:auto; width:100%; max-width:1031px; padding-top:71px; padding-bottom:20px;text-align: -webkit-center}
 
 .inner-left{ float:left; width:100%; max-width:331px}
 
 .inner-right{ float:right; width:100%; max-width:700px}
 
-.wrapper-inner p{ color:#343434; font-size:13px; line-height:30px; font-weight:400;padding-bottom:20px; font-weight:300}
+.wrapper-inner p{ color:#343434; font-size:13px; line-height:30px; font-weight:400;padding:0px 0px 20px 20px; font-weight:300;text-align: justify;}
 
 /* ==========================================================================
 
@@ -373,3 +375,14 @@ z-index:2;transition: width 0.3s; z-index:1}
 .commentys-form input[type="button"]{ padding:0 36px; text-transform:uppercase; display:inline-block; font-size:14px; line-height:47px; color:#FFF; font-weight:300; text-align:center; border:none; outline:none; background-color:#fb5353; margin-top:50px; margin-bottom:60px}
 
 .commentys-form input[type="button"]:hover{ background-color:#ff5c5c}
+
+/* ==========================================================================
+
+	Lista
+
+========================================================================== */
+
+.txtList{
+	text-align: left;
+	margin-left: 5%;
+}
