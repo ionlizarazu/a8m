@@ -96,13 +96,6 @@ $("#send").click(function(event) {
     var route = "./contact";
     var form_btn = $("#send");
     var form_result_div = '#form-result';
-    console.log(token);
-    console.log(name);
-    console.log(subject);
-    console.log(email);
-    console.log(msg);
-    console.log(route);
-
     $(form_result_div).remove();
  
     $.ajax({
