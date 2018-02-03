@@ -23,5 +23,9 @@ Route::get('/about',function () {
 Route::get('/inscription',function () {
     return View::make('inscription.inscription');
 });
+Route::get('/contact',function () {
+    return View::make('contact.contact');
+});
+Route::post('/contact',['as' => 'contact','uses' => 'Contact\ContactController@store']);
 //Route::get('flickr/{id}', ['as' => 'flickr.photo', 'uses' => 'FlickrController@show'])->where(['id' => '[0-9]+']);
 //Route::get('flickr', ['as' => 'flickr.index', 'uses' => 'FlickrController@index']);

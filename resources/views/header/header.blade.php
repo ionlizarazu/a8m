@@ -20,7 +20,7 @@
               <li class="{{ Request::is('about') ? "active" : "" }}""><a href="{{url('/about')}}">Guri buruz</a></li>
               <li class="{{ Request::is('inscription') ? "active" : "" }}""><a href="{{url('/inscription')}}">Izen-ematea</a></li>
               
-              <li class="{{ Request::is('contact') ? "active" : "" }}""><a href="contact.html">Kontaktua</a></li>
+              <li class="{{ Request::is('contact') ? "active" : "" }}""><a href="{{url('/contact')}}">Kontaktua</a></li>
             </ul>
           </div>
         </div>
