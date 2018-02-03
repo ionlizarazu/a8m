@@ -1,2 +1,2 @@
 
-<iframe frameBorder="0" scrolling="no" src="https://es.wikiloc.com/wikiloc/spatialArtifacts.do?event=view&id=3948813&measures=on&title=on&near=on&images=on&maptype=S" width="100%" height="800"></iframe><div style="background-color:#fff;color:#777;font-size:11px;line-height:16px;">Powered by <a style="color:#06d;font-size:11px;line-height:16px;" target="_blank" href="https://es.wikiloc.com">Wikiloc</a></div>
+<iframe frameBorder="0" scrolling="no" src="https://es.wikiloc.com/wikiloc/spatialArtifacts.do?event=view&id=3948813&measures=on&title=off&near=off&images=off&maptype=S" width="100%" height="800"></iframe>
