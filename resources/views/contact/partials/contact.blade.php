@@ -1,5 +1,6 @@
 
   <div class="wrapper">
+      <h1 class="page-header">Kontaktua</h1>
 
       <!-- contact -->
 
@@ -9,9 +10,9 @@
 
         <div class="inner-left">
 
-            <p class="phone"><a href="tel:8197654321">+8197654321</a></p>
+            <p class="phone"><a href="tel:666777888">666777888</a></p>
 
-            <p class="email"><a href="mailto:contact@Picxa.com">contact@Picxa.com</a></p>
+            <p class="email"><a href="mailto:antzuolako8miliak@gmail.com">antzuolako8miliak@gmail.com</a></p>
 
           </div>
 
@@ -23,7 +24,7 @@
 
             <header>
 
-                <h4>Feel Free to Contact Me</h4>
+                <h4>Jarri gurekin harremanetan</h4>
 
               </header>
               <!-- contact-form -->

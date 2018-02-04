@@ -4,8 +4,10 @@
 <!-- image Gallery -->
 <div class="wrapper">
     <div class="">
-     <div class="grid">
-         <div id="js-filters-masonry" class="cbp-l-filters-work">
+      <h1 class="page-header">2017 Argazki galeria</h1>
+
+      <div class="grid">
+        <div id="js-filters-masonry" class="cbp-l-filters-work">
             <?php $i=0; ?>
             @foreach($galleryImages as $zones)
                 @if ($i == 0)     

@@ -1,6 +1,8 @@
 
 <div class="wrapper">
 	<!-- details-image -->
+    <h1 class="page-header">Guri buruz</h1>
+
 	<figure class="details-image">
     	<img src="images/about-a8m.jpg" alt="" class="img-responsive"/>
     </figure>

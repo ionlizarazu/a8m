@@ -14,15 +14,7 @@ class ImageController extends Controller
         foreach ($files as $file)
         {
             $partners[] = pathinfo($file);
-        }
-        /*
-        $filesInFolder = \File::files('images');
-
-        foreach($filesInFolder as $path)
-        {
-        }
-        */
-        
+        }        
         return $partners;
     }
 }
