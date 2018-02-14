@@ -7,44 +7,33 @@
       
       <!-- logo -->
       
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"> <img src="images/footer-logo.png" alt="Picxa" title="Picxa"/>
-        <p class="copy-right">&copy; Reserved Picxa inc 2016.</p>
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"> 
+        <img src="images/footer-logo.png" alt="Kodekoop" title="Kodekoop"/>
+        <p><a href="mailto:kontaktua@kodekoop.eus">kontaktua@kodekoop.eus</a></p>        
+        <p><a href="http://www.kodekoop.eus" target="_blank">www.kodekoop.eus</a></p>        
       </div>
       
       <!-- logo --> 
       
-      <!-- address -->
+      <!-- phone -->
       
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 padding-top">
-        <address>
-        <p>200 Broadway Av</p>
-        <p>West Beach SA 5024  Australia</p>
-        </address>
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 padding-top">
+        <p class="footerHead">Telefonoz:</p>
+        <p>686 437 856 (Markel)</p>
+        <p>648 067 986 (Ion)</p>
       </div>
       
-      <!-- address --> 
-      
-      <!-- email -->
-      
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 padding-top">
-        <p><a href="mailto:contact@Picxa.com">contact@Picxa.com</a></p>
-        <p>01 (2) 34 56 78</p>
-      </div>
-      
-      <!-- email --> 
+      <!-- phone --> 
       
       <!-- social -->
       
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 padding-top">
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 padding-top">
         <ul class="social">
-          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-delicious" aria-hidden="true"></i></a></li>
+          <p class="footerHead">Sare sozialak:</p>
+          <li><a href="http://www.twitter.com/kodekoop" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="http://www.facebook.com/kodekoop.eus" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
         </ul>
-        <p class="made-by">Made with by <i class="fa fa-heart" aria-hidden="true"></i> <a href="http://www.designstub.com/" target="_blank">Designstub</a>
+        
         <p> 
       </div>
       

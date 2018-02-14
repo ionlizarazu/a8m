@@ -14,7 +14,8 @@
           //<img src="{{ asset("storage/partners/2013_Aitz_Garbi.JPG") }}" alt="Picxa" title="Picxa"/></a>
           for(var i=0;i<data.length;i++){
             jQuery('<img/>',{
-              src:"storage/partners/"+data[i].basename
+              src:"storage/partners/"+data[i].basename,
+              alt: data[i].basename
               }).appendTo('#partners');
             console.log(data[i]);            
           }
