@@ -48,7 +48,7 @@ $(document).ready(function() {
             info: "Erakutsiak _START_, _END_ etatik. Denera _TOTAL_ ",
             "lengthMenu": "Erakutsi _MENU_erregistroak orrika",
             "zeroRecords": "Ez da ezer aurkitu",
-            "info": "_PAGE_.orria _PAGES_etik",
+            "info": "_PAGE_. orria _PAGES_etik",
             "infoEmpty": "Ez dago erregistrorik eskuragarri,",
             "infoFiltered": "_MAX_ erregistrotatik filtratuta"
 
