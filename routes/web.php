@@ -16,17 +16,20 @@ Route::get('/', function () {
 });
 
 Route::get('/', ['as' => 'home', 'uses' => 'FlickrController@search']);
-Route::get('/route', ['as' => 'route', 'uses' => 'FlickrController@route']);
-Route::get('/about',function () {
+Route::get('/ibilbidea', ['as' => 'route', 'uses' => 'FlickrController@route']);
+Route::get('/guri-buruz',function () {
     return View::make('about.about');
 });
-Route::get('/inscription',function () {
+Route::get('/izen-ematea',function () {
     return View::make('inscription.inscription');
 });
-Route::get('/contact',function () {
+Route::get('/sailkapena',function () {
+    return View::make('clasification.clasification');
+});
+Route::get('/kontaktua',function () {
     return View::make('contact.contact');
 });
-Route::post('/contact',['as' => 'contact','uses' => 'Contact\ContactController@store']);
-Route::get('/partners', ['as' => 'partners', 'uses' => 'ImageController@partners']);
+Route::post('/kontaktua',['as' => 'contact','uses' => 'Contact\ContactController@store']);
+Route::get('/babesleak', ['as' => 'partners', 'uses' => 'ImageController@partners']);
 //Route::get('flickr/{id}', ['as' => 'flickr.photo', 'uses' => 'FlickrController@show'])->where(['id' => '[0-9]+']);
 //Route::get('flickr', ['as' => 'flickr.index', 'uses' => 'FlickrController@index']);

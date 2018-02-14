@@ -93,7 +93,7 @@ $("#send").click(function(event) {
     var subject = $("#subject").val();
     var email = $("#email").val();
     var msg = $("#msg").val();
-    var route = "./contact";
+    var route = "./kontaktua";
     var form_btn = $("#send");
     var form_result_div = '#form-result';
     $(form_result_div).remove();

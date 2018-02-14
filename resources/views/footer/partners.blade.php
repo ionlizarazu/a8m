@@ -3,7 +3,7 @@
 <script src="{{ asset('https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js')}}"></script> 
 
 <script>
-    var route = './partners';
+    var route = './babesleak';
     var token = $("input[name=_token]").val();    
     $.ajax({
         url:route,

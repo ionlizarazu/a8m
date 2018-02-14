@@ -16,11 +16,12 @@
           <div class="main-menu">
             <ul>
               <li class="{{ Request::is('/') ? "active" : "" }}"><a href="{{url('/')}}">Hasiera</a></li>
-              <li class="{{ Request::is('route') ? "active" : "" }}""><a href="{{url('/route')}}">Ibilbidea</a></li>
-              <li class="{{ Request::is('about') ? "active" : "" }}""><a href="{{url('/about')}}">Guri buruz</a></li>
-              <li class="{{ Request::is('inscription') ? "active" : "" }}""><a href="{{url('/inscription')}}">Izen-ematea</a></li>
+              <li class="{{ Request::is('ibilbidea') ? "active" : "" }}""><a href="{{url('/ibilbidea')}}">Ibilbidea</a></li>
+              <li class="{{ Request::is('guri-buruz') ? "active" : "" }}""><a href="{{url('/guri-buruz')}}">Guri buruz</a></li>
+              <li class="{{ Request::is('izen-ematea') ? "active" : "" }}""><a href="{{url('/izen-ematea')}}">Izen-ematea</a></li>
+               <li class="{{ Request::is('sailkapena') ? "active" : "" }}""><a href="{{url('/sailkapena')}}">Sailkapena</a></li>
               
-              <li class="{{ Request::is('contact') ? "active" : "" }}""><a href="{{url('/contact')}}">Kontaktua</a></li>
+              <li class="{{ Request::is('kontaktua') ? "active" : "" }}""><a href="{{url('/kontaktua')}}">Kontaktua</a></li>
             </ul>
           </div>
         </div>
