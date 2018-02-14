@@ -53,6 +53,23 @@ $(document).ready(function() {
             "infoFiltered": "_MAX_ erregistrotatik filtratuta"
 
         },
+        columnDefs: [ {
+            targets: [ 3 ],
+            orderData: [ 3, 0 ]
+        },{
+            targets: [ 4 ],
+            orderData: [ 4, 0 ]
+        }, {
+            targets: [ 5 ],
+            orderData: [ 5, 0 ]
+        }, {
+            targets: [ 6 ],
+            orderData: [ 6, 0 ]
+        },{
+            targets: [ 7 ],
+            orderData: [ 7, 0 ]
+        }
+         ],
         columns: [
                 {data: 'sailkapena', name: 'sailkapena'},
                 {data: 'denbora', name: 'denbora'},
