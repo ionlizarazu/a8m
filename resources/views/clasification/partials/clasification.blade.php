@@ -45,7 +45,12 @@ $(document).ready(function() {
               previous:"Aurrekoa",
               next:"Hurrengoa"
             },
-            info: "Erakutsiak _START_, _END_ etatik. Denera _TOTAL_ "
+            info: "Erakutsiak _START_, _END_ etatik. Denera _TOTAL_ ",
+            "lengthMenu": "Erakutsi _MENU_erregistroak orrika",
+            "zeroRecords": "Ez da ezer aurkitu",
+            "info": "page _PAGE_.orria _PAGES_etik",
+            "infoEmpty": "Ez dago erregistrorik eskuragarri",
+            "infoFiltered": "_MAX_ erregistrotatik filtratuta"
 
         },
         columns: [
