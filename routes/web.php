@@ -31,5 +31,7 @@ Route::get('/kontaktua',function () {
 });
 Route::post('/kontaktua',['as' => 'contact','uses' => 'Contact\ContactController@store']);
 Route::get('/babesleak', ['as' => 'partners', 'uses' => 'ImageController@partners']);
+//Route::get('/sailkapena', 'ClasificationController@index');
+Route::get('/sailkapena/getData','ClasificationController@getClasification')->name('sailkapena/getData');
 //Route::get('flickr/{id}', ['as' => 'flickr.photo', 'uses' => 'FlickrController@show'])->where(['id' => '[0-9]+']);
 //Route::get('flickr', ['as' => 'flickr.index', 'uses' => 'FlickrController@index']);

@@ -1,3 +1,4 @@
+
 <div class="wrapper">
     <!-- details-image -->
     <!-- content -->
@@ -7,10 +8,59 @@
         </div>
         <h3>2018ko Otsailaren 18an, Antzuolako 8 Miliak lasterketa</h3>
         <div class="about-content">
-        <h3>Lasterketa Herrikoia</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat eu nibh ultricies semper. Vivamus porta, felis vitae facilisis sodales, felis est iaculis orci, et ornare sem mauris ut turpis. Pellentesque vitae tortor nec tellus hendrerit aliquam. Donec condimentum leo eu ull pellentesque urna rhoncus.</p>
-        <p>elis est iaculis orci, et ornare sem mauris ut turpis. Pellentesque vitae tortor nec tellus hendrerit aliquam. Donec condimentum leo eu ullamcorper scelerisque pellentes rhoncus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat eu nibh ultricies semper. Vivamus porta, felis vitae facilisis sodales, felis est iaculis orci, et ornare sem mauris ut turpis. Pellentesque vitae tortor nec tellus hendrerit aliquam. Donec condimentum leo eu ull pellentesque urna rhoncus.</p>
-        <p>elis est iaculis orci, et ornare sem mauris ut turpis. Pellentesque vitae tortor nec tellus hendrerit aliquam. Donec condimentum leo eu ullamcorper scelerisque pellentes rhoncus.</p>
+        <table  class="table table-hover table-bordered table-striped datatable">
+            <thead>
+            <tr>
+                <th>Sailkapena</th>
+                <th>Denbora</th>
+                <th>Dortsala</th>
+                <th>Izena</th>
+                <th>Abizenak</th>
+                <th>Herria</th>
+                <th>Sexua</th>
+                <th>Kategoria</th>
+            </tr>
+            </thead>
+        </table>
+</div>
+<script src="{{ asset('https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js')}}"></script> 
+<script>
+$(document).ready(function() {
+    $('.datatable').DataTable({
+        processing: true,
+        serverSide: true,
+        pageLength: 50,
+        ajax: 'sailkapena/getData',
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ],
+        language: {
+            search: "Bilatu",
+            buttons: {
+                copy: 'Kopiatu',
+                print:'Inprimatu'
+            },
+            paginate: {
+              previous:"Aurrekoa",
+              next:"Hurrengoa"
+            },
+            info: "Erakutsiak _START_, _END_ etatik. Denera _TOTAL_ "
+
+        },
+        columns: [
+                {data: 'sailkapena', name: 'sailkapena'},
+                {data: 'denbora', name: 'denbora'},
+                {data: 'dortsala', name: 'dortsala'},
+                {data: 'izena', name: 'izena'},
+                {data: 'abizenak', name: 'abizenak'},
+                {data: 'herria', name: 'herria'},
+                {data: 'sexua', name: 'sexua'},
+                {data: 'kategoria', name: 'kategoria'},
+        ]
+    });
+});
+</script>
     </div>
     </div>                      
     @include('footer.partners') 

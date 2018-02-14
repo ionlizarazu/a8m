@@ -20,7 +20,8 @@
 <!-- Responsive Style -->
 <link href="{{ asset('css/responsive.css') }}" rel="stylesheet" type="text/css">
     <!-- cubeportfolio -->
-<link rel="stylesheet" type="text/css" href="{{ asset('js/cubeportfolio/css/cubeportfolio.min.css') }}"> 
+<link rel="stylesheet" type="text/css" href="{{ asset('js/cubeportfolio/css/cubeportfolio.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css')}}" type="text/javascript"></link> 
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 
@@ -57,5 +58,17 @@
 <!-- <script type="text/javascript" src="{{ asset('js/cubeportfolio/js/main.js') }}"></script> -->
 <script src="{{ asset('js/jquery.nicescroll.min.js')}}" type="text/javascript"></script>
 <script src="{{ asset('vendor/jquery.validation/jquery.validation.js') }}"></script>
+
+
+<script src="{{ asset('https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js')}}" type="text/javascript"></script>
+<script src="{{ asset('https://cdn.datatables.net/buttons/1.5.1/js/buttons.flash.min.js') }}"></script>
+<script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js') }}"></script>
+<script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/pdfmake.min.js') }}"></script>
+<script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js') }}"></script>
+<script src="{{ asset('https://cdn.datatables.net/buttons/1.5.1/js/buttons.html5.min.js') }}"></script>
+<script src="{{ asset('https://cdn.datatables.net/buttons/1.5.1/js/buttons.print.min.js') }}"></script>
 </body>
 </html>
+
+
