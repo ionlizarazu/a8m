@@ -6,9 +6,18 @@
         <div class="page-header">
         <h1>Sailkapena</h1>
         </div>
-        <h3>2018ko Otsailaren 18an, Antzuolako 8 Miliak lasterketa</h3>
         <div class="about-content">
-        <table  class="table table-hover table-bordered table-striped datatable">
+        <div role="tabpanel">
+          <ul class="nav nav-tabs" role="tablist">
+            <?php $i=0; ?>
+            @foreach($years as $year)
+                <li><a id="tab{{$i}}" role="tab" data-toggle="tab">{{ $year["urtea"] }}</a></li>
+            <?php $i++; ?>    
+            @endforeach  
+
+          </ul>
+        </div>
+        <table class="table table-hover table-bordered table-striped"  cellspacing="0" width="100%" >
             <thead>
             <tr>
                 <th>Sailkapena</th>
@@ -22,15 +31,23 @@
             </tr>
             </thead>
         </table>
+    </div>    
 </div>
 <script src="{{ asset('https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js')}}"></script> 
 <script>
-$(document).ready(function() {
-    $('.datatable').DataTable({
+getYearJSON = function(year) {
+      $('table.table').DataTable({
+        destroy: true,
         processing: true,
         serverSide: true,
         pageLength: 50,
-        ajax: 'sailkapena/getData',
+        scrollX: true,
+        ajax: {
+            url: 'sailkapena/getData',
+            data: function (d) {
+                d.year = year
+            }
+        },
         dom: 'Bfrtip',
         buttons: [
             'copy', 'csv', 'excel', 'pdf', 'print'
@@ -46,11 +63,11 @@ $(document).ready(function() {
               next:"Hurrengoa"
             },
             info: "Erakutsiak _START_, _END_ etatik. Denera _TOTAL_ ",
-            "lengthMenu": "Erakutsi _MENU_erregistroak orrika",
-            "zeroRecords": "Ez da ezer aurkitu",
-            "info": "_PAGE_. orria _PAGES_etik",
-            "infoEmpty": "Ez dago erregistrorik eskuragarri,",
-            "infoFiltered": "_MAX_ erregistrotatik filtratuta"
+            lengthMenu: "Erakutsi _MENU_erregistroak orrika",
+            zeroRecords: "Ez da ezer aurkitu",
+            info: "_PAGE_. orria _PAGES_etik",
+            infoEmpty: "Ez dago erregistrorik eskuragarri,",
+            infoFiltered: "_MAX_ erregistrotatik filtratuta"
 
         },
         columnDefs: [ {
@@ -81,6 +98,18 @@ $(document).ready(function() {
                 {data: 'kategoria', name: 'kategoria'},
         ]
     });
+}; 
+$(document).ready(function() {
+    //first time
+    var year=$(".nav-tabs li:first").text();
+    $(".nav-tabs li:first").addClass("active");
+    getYearJSON(year);
+    $('a[data-toggle="tab"]').on( 'shown.bs.tab', function (e) {
+        //not first time
+        $.fn.dataTable.tables( {visible: true, api: true} ).columns.adjust();
+        year=e.target.innerText;
+        getYearJSON(year);
+    } );
 });
 </script>
     </div>

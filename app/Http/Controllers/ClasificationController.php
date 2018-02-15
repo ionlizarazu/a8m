@@ -14,17 +14,21 @@ class ClasificationController extends Controller
      */
     public function index()
     {
-    	 return view('clasification.clasification');
+    	//TODO: extract code below from controller :) 
+    	$json = Storage::disk('local')->get('public/clasification/years.json');
+        $years = json_decode($json, true);
+        return view('clasification.clasification')->with('years', $years);
     }
     //
     /**
      * @return mixed
      */
-    public function getClasification()
-    {
-    	//TODO: extract code below from controller :) 
-    	$json = Storage::disk('local')->get('public/clasification/2017.json');
+    public function getClasification(Request $request)
+    {	
+        //TODO: extract code below from controller :) 
+    	$json = Storage::disk('local')->get('public/clasification/'.$request->year.'.json');
         $clasification = json_decode($json, true);
         return Datatables::of($clasification)->make(true);
+        
     }
 }

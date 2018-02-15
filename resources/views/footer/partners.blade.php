@@ -16,12 +16,10 @@
             jQuery('<img/>',{
               src:"storage/partners/"+data[i].basename,
               alt: data[i].basename
-              }).appendTo('#partners');
-            console.log(data[i]);            
+              }).appendTo('#partners');         
           }
         },
-        error: function(data) {
-          console.log(data);            
+        error: function(data) {;            
         }
     });
 </script>
