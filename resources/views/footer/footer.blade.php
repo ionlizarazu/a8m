@@ -8,7 +8,7 @@
       <!-- logo -->
       
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4"> 
-        <img src="images/footer-logo.png" alt="Kodekoop" title="Kodekoop"/>
+        <img src={{ asset("images/footer-logo.png")}} alt="Kodekoop" title="Kodekoop"/>
         <p><a href="mailto:kontaktua@kodekoop.eus">kontaktua@kodekoop.eus</a></p>        
         <p><a href="http://www.kodekoop.eus" target="_blank">www.kodekoop.eus</a></p>        
       </div>
