@@ -10,8 +10,6 @@
 
         <div class="inner-left">
 
-            <p class="phone"><a href="tel:666777888">666777888</a></p>
-
             <p class="email"><a href="mailto:antzuolako8miliak@gmail.com">antzuolako8miliak@gmail.com</a></p>
 
           </div>
@@ -24,7 +22,7 @@
 
             <header>
 
-                <h4>Jarri gurekin harremanetan</h4>
+                <h2>Jarri gurekin harremanetan</h2>
 
               </header>
               <!-- contact-form -->

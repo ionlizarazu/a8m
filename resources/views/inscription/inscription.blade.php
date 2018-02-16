@@ -1,8 +1,8 @@
 @extends('index')
 @section('title','Kodekoop')
 @section('description', 'hasierako deskribapena.')
-@section('keywords', 'Trabajos web','Creador web','Paginas web','Diseñador web,Diseño web,Angular,Laravel,PHP,Bootstrap,HTML5,CSS3,JavaScript,Jquery,Freelance,Web Freelancer,SEO,Email marketing,SEO,PPC,Banner, Desarrollador Web, Desarrollo Web')
-{{-- @section('canonical','http://www.creadoreswebs.es')--}}
+@section('keywords', 'Antzuola izena eman','mendi lasterketa izena eman','a8m izena eman','8 milak izena eman','zortzi milak izena eman','antzuolako 8 milak izena eman','antzuolako zortzi milak izena eman', 'antzuola lasterketa izena eman','antzuola mendi lasterketa izena eman','mendi izena eman','lasterketa izena eman','izena eman','Antzuola inskripzioa','mendi lasterketa inskripzioa','a8m inskripzioa','8 milak inskripzioa','zortzi milak inskripzioa','antzuolako 8 milak inskripzioa','antzuolako zortzi milak inskripzioa', 'antzuola lasterketa inskripzioa','antzuola mendi lasterketa inskripzioa','mendi inskripzioa','lasterketa inskripzioa','inskripzioa','Antzuola parte hartu','mendi lasterketa parte hartu','a8m parte hartu','8 milak parte hartu','zortzi milak parte hartu','antzuolako 8 milak parte hartu','antzuolako zortzi milak parte hartu', 'antzuola lasterketa parte hartu','antzuola mendi lasterketa parte hartu','mendi parte hartu','lasterketa parte hartu','parte hartu')
+@section('canonical','http://www.a8m.kodekoop.eus/izen-ematea')
 
 @section('header') 
 	@include('header.header')

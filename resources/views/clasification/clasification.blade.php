@@ -1,8 +1,8 @@
 @extends('index')
 @section('title','Kodekoop')
 @section('description', 'hasierako deskribapena.')
-@section('keywords', 'Trabajos web','Creador web','Paginas web','Diseñador web,Diseño web,Angular,Laravel,PHP,Bootstrap,HTML5,CSS3,JavaScript,Jquery,Freelance,Web Freelancer,SEO,Email marketing,SEO,PPC,Banner, Desarrollador Web, Desarrollo Web')
-{{-- @section('canonical','http://www.creadoreswebs.es')--}}
+@section('keywords', 'Antzuola sailkapena','mendi lasterketa sailkapena','a8m sailkapena','8 milak sailkapena','zortzi milak sailkapena','antzuolako 8 milak sailkapena','antzuolako zortzi milak sailkapena', 'antzuola lasterketa sailkapena','antzuola mendi lasterketa sailkapena','mendi sailkapena','lasterketa sailkapena','sailkapena')
+@section('canonical','http://www.a8m.kodekoop.eus/sailkapena')
 
 @section('header') 
 	@include('header.header')

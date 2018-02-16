@@ -4306,7 +4306,7 @@
         },
         {
             "name": "symfony/thanks",
-            "version": "v1.0.68",
+            "version": "v1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/thanks.git",

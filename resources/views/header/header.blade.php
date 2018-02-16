@@ -3,7 +3,7 @@
   <div class="container-fluid">
     <hgroup>  
       <!-- logo -->   
-      <h1> <a href="index1.html" title="Picxa"><img src="{{ asset('images/logo.png') }}" alt="Picxa" title="Picxa"/></a> </h1> 
+      <h1><a  title="Antzuolako 8 milak"><img src="{{ asset('images/logo.png') }}" alt="Antzuolako 8 milak"/></a></h1>
       <!-- logo -->    
       <!-- nav -->   
       <nav>

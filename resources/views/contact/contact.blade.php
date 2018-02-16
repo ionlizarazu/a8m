@@ -3,8 +3,8 @@
 @section('description')
 @lang('contact.description')
 @endsection
-@section('keywords', 'Trabajos web','Creador web','Paginas web','Diseñador web,Diseño web,Angular,Laravel,PHP,Bootstrap,HTML5,CSS3,JavaScript,Jquery,Freelance,Web Freelancer,SEO,Email marketing,SEO,PPC,Banner, Desarrollador Web, Desarrollo Web')
-
+@section('keywords', 'Antzuola kontaktua','mendi lasterketa kontaktua','a8m kontaktua','8 milak kontaktua','zortzi milak kontaktua','antzuolako 8 milak kontaktua','antzuolako zortzi milak kontaktua','antzuola lasterketa kontaktua','antzuola mendi lasterketa kontaktua','kontaktua')
+@section('canonical','http://www.a8m.kodekoop.eus/kontaktua')
 @section('header')
     @include('header.header')
 @endsection
