@@ -11,11 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return View::make('galeria.galeria');
-});
-
-Route::get('/galeria', ['as' => 'galeria', 'uses' => 'FlickrController@search']);
+Route::get('/galeria/{year}', ['as' => 'galeria', 'uses' => 'FlickrController@search']);
 Route::get('/ibilbidea', ['as' => 'route', 'uses' => 'FlickrController@route']);
 Route::get('/',function () {
     return View::make('about.about');

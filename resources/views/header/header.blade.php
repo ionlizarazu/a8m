@@ -18,7 +18,7 @@
               <li class="{{ Request::is('/') ? "active" : "" }}"><a href="{{url('/')}}">Hasiera</a></li>
               <li class="{{ Request::is('izen-ematea') ? "active" : "" }}""><a href="{{url('/izen-ematea')}}">Izen-ematea</a></li>
               <li class="{{ Request::is('ibilbidea') ? "active" : "" }}""><a href="{{url('/ibilbidea')}}">Ibilbidea</a></li>
-              <li class="{{ Request::is('galeria') ? "active" : "" }}""><a href="{{url('/galeria')}}">Galeria</a></li>
+              <li class="{{ Request::is('galeria/2017') ? "active" : "" }}""><a href="{{url('/galeria/2017')}}">Galeria 2017</a></li>
                <li class="{{ Request::is('sailkapena') ? "active" : "" }}""><a href="{{url('/sailkapena')}}">Sailkapena</a></li>
               <li class="{{ Request::is('kontaktua') ? "active" : "" }}""><a href="{{url('/kontaktua')}}">Kontaktua</a></li>
             </ul>
