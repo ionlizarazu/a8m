@@ -65,7 +65,7 @@ class FlickrController extends Controller
             }
             $galleryImages[] =array('gallery_id'=>$gallery['gallery_id'],'title'=>$gallery['title']['_content'],'images' => $imgTitleUrls);
          }
-         return view('home.home')->with('galleryImages', $galleryImages);
+         return view('galeria.galeria')->with('galleryImages', $galleryImages);
     }
 
     /**

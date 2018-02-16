@@ -12,12 +12,12 @@
 */
 
 Route::get('/', function () {
-    return View::make('home.home');
+    return View::make('galeria.galeria');
 });
 
-Route::get('/', ['as' => 'home', 'uses' => 'FlickrController@search']);
+Route::get('/galeria', ['as' => 'galeria', 'uses' => 'FlickrController@search']);
 Route::get('/ibilbidea', ['as' => 'route', 'uses' => 'FlickrController@route']);
-Route::get('/guri-buruz',function () {
+Route::get('/',function () {
     return View::make('about.about');
 });
 Route::get('/izen-ematea',function () {

@@ -6,9 +6,9 @@
         <h1>Izen-ematea</h1>
         <a href="http://www.kirolprobak.com/competicion_ficha.php?id=2013" target="_blank"><button class="btn btn-primary btn-lg" >www.kirolprobak.com</button></a>
         </div>
-        <h3>2018ko Otsailaren 18an, Antzuolako 8 Miliak lasterketa</h3>
+        <h2>2018ko Otsailaren 18an, Antzuolako 8 Miliak lasterketa</h2>
         <section class="inner-half-left">
-            <h4>[EUS]</h4>
+            <h3>[EUS]</h3>
             <p>ERABAT DEBEKATUTA EGONGO DA DORTSAL GABE LASTERKETAN IRTETEA. DORTSAL GABE IRTETEN DEN EDOZEIN, BEREHALA IBILBIDETIK KANPORATUA IZANGO DA.</p>
             <p>Izena ematen denetik astebeteko epean ordainketa egiten ez bada, izen ematea baliogabetu egingo da eta pertsona berriei emango zaio parte hartzeko aukera.</p>
             <p>Dortsal kopurua bete ezkero, egunean bertan ez da izen ematerik egongo. Inola ere ez da izen emate kopurua handituko.</p>
@@ -20,7 +20,7 @@
             <p><strong>A8M Antolakuntza.</strong></p>
         </section>
         <section class="inner-half-right">
-            <h4>[CAS]</h4>
+            <h3>[CAS]</h3>
             <p>ESTARA TOTALMENTE PROHIBIDO SALIR EN LA CARRERA SIN DORSAL. TODO AQUEL QUE SALGA SIN DORSAL, SERA INMEDIATAMENTE EXPULSADO DEL CIRCUITO.</p>
             <p>Si en una semana después de realizar la inscripcién todavéa no se ha realizado el pago, la inscripcién se considerara nula y se daré paso a dar opcién a nuevas inscripciones.</p>
             <p>Si se completa el numero de dorsales, el día de la prueba no se abrirán las inscripciones. De ninguna manera se ampliaré el cupo de inscripciones.</p>

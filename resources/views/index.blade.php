@@ -16,12 +16,12 @@
 <!-- Effet -->
 <link rel="stylesheet" type="text/css" href="{{ asset('css/gallery/set1.css') }}" />
 <!-- Main Style -->
-<link rel="stylesheet" href="{{ asset('css/main.css') }}" type="text/css">
 <!-- Responsive Style -->
 <link href="{{ asset('css/responsive.css') }}" rel="stylesheet" type="text/css">
     <!-- cubeportfolio -->
 <link rel="stylesheet" type="text/css" href="{{ asset('js/cubeportfolio/css/cubeportfolio.min.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css')}}" type="text/javascript"></link> 
+<link rel="stylesheet" href="{{ asset('css/main.css') }}" type="text/css">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 

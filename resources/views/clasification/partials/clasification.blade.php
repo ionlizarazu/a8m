@@ -8,7 +8,7 @@
         </div>
         <div class="about-content">
         <div role="tabpanel">
-          <ul class="nav nav-tabs" role="tablist">
+          <ul class="nav nav-tabs nav-justified" role="tablist">
             <?php $i=0; ?>
             @foreach($years as $year)
                 <li><a id="tab{{$i}}" role="tab" data-toggle="tab">{{ $year["urtea"] }}</a></li>
@@ -36,6 +36,7 @@
 <script src="{{ asset('https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js')}}"></script> 
 <script>
 getYearJSON = function(year) {
+
       $('table.table').DataTable({
         destroy: true,
         processing: true,
@@ -44,20 +45,22 @@ getYearJSON = function(year) {
         scrollX: true,
         ajax: {
             url: 'sailkapena/getData',
+            type: 'GET',
             data: function (d) {
                 d.year = year
             }
         },
         dom: 'Bfrtip',
         buttons: [
-            'copy', 'csv', 'excel', 'pdf', 'print'
+            {'extend':'copy','text':'Kopiatu','className':'btn btn-primary btn-sg'},
+            {'extend':'csv','text':'csv','className':'btn btn-primary btn-sg'},
+            {'extend':'excel','text':'excel','className':'btn btn-primary btn-sg'},
+            {'extend':'pdf','text':'pdf','className':'btn btn-primary btn-sg'},
+            {'extend':'print','text':'Inprimatu','className':'btn btn-primary btn-sg'}
         ],
         language: {
             search: "Bilatu",
-            buttons: {
-                copy: 'Kopiatu',
-                print:'Inprimatu'
-            },
+            processing: "Prestatzen...",
             paginate: {
               previous:"Aurrekoa",
               next:"Hurrengoa"
