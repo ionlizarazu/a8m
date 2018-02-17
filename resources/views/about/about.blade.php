@@ -1,7 +1,7 @@
 @extends('index')
-@section('title','Kodekoop')
-@section('description', 'hasierako deskribapena.')
-@section('keywords', 'Antzuola','mendi lasterketa','a8m','8 milak','zortzi milak','antzuolako 8 milak','antzuolako zortzi milak','antzuola lasterketa','antzuola mendi lasterketa','guri buruz')
+@section('title','Antzuolako 8 miliak')
+@section('description', 'Antzuolako 8 miliak mendi lasterketaren webgunea. Guri buruzko informazioa duzue eskuragarri, lasterketa herrikoi honen inguruko datu guztiak ere bertan jasoko ditugu.')
+@section('keywords', 'Antzuola','mendi lasterketa','a8m','8 miliak','zortzi miliak','antzuolako 8 miliak','antzuolako zortzi miliak','antzuola lasterketa','antzuola mendi lasterketa','guri buruz')
 
 @section('canonical','http://www.a8m.kodekoop.eus')
 

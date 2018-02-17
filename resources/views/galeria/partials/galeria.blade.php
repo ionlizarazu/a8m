@@ -33,7 +33,7 @@
               <div class="cbp-item {{ $zones['gallery_id'] }}">
                 <a href="{{ $photos['url'] }}" class="cbp-caption cbp-lightbox">
                   <div>
-                    <img src="{{ $photos['url'] }}" alt="">
+                    <img src="{{ $photos['url'] }}" alt="{{$photos['title']}}">
                   </div>
                   <div class="cbp-caption-activeWrap">
                     <div class="cbp-l-caption-alignLeft">
