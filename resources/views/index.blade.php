@@ -34,6 +34,13 @@
     <![endif]-->
 
 <script src="{{ asset('js/assets/modernizr-2.8.3.min.js') }}" type="text/javascript"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114346045-1');
+</script>
 </head>
 
 <body>
@@ -69,6 +76,9 @@
 <script src="{{ asset('https://cdn.datatables.net/buttons/1.5.1/js/buttons.html5.min.js') }}"></script>
 <script src="{{ asset('https://cdn.datatables.net/buttons/1.5.1/js/buttons.print.min.js') }}"></script>
 <script src="{{ asset('https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js') }}"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114346045-1"></script>
+
 </body>
 </html>
 
