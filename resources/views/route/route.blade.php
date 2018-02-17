@@ -1,7 +1,7 @@
 @extends('index')
-@section('title','Kodekoop')
-@section('description', 'hasierako deskribapena.')
-@section('keywords', 'Antzuola ibilbidea','mendi lasterketa ibilbidea','a8m ibilbidea','8 milak ibilbidea','zortzi milak ibilbidea','antzuolako 8 milak ibilbidea','antzuolako zortzi milak ibilbidea', 'antzuola lasterketa ibilbidea','antzuola mendi lasterketa ibilbidea','mendi ibilbidea','lasterketa ibilbidea','ibilbidea','Antzuola ruta','mendi lasterketa ruta','a8m ruta','8 milak ruta','zortzi milak ruta','antzuolako 8 milak ruta','antzuolako zortzi milak ruta', 'antzuola lasterketa ruta','antzuola mendi lasterketa ruta','mendi ruta','lasterketa ruta','ruta')
+@section('title','Lasterketako ibilbidea')
+@section('description', 'Hemen dituzu Antzuolako 8 miliak lasterketako ibilbidearen nondik norakoak. Wikiloc atariko informazioaz baliatuta, ikusgai dago ibilbidea eta honen altimetria.')
+@section('keywords', 'Antzuola ibilbidea','mendi lasterketa ibilbidea','a8m ibilbidea','8 miliak ibilbidea','zortzi miliak ibilbidea','antzuolako 8 miliak ibilbidea','antzuolako zortzi miliak ibilbidea', 'antzuola lasterketa ibilbidea','antzuola mendi lasterketa ibilbidea','mendi ibilbidea','lasterketa ibilbidea','ibilbidea','Antzuola ruta','mendi lasterketa ruta','a8m ruta','8 miliak ruta','zortzi miliak ruta','antzuolako 8 miliak ruta','antzuolako zortzi miliak ruta', 'antzuola lasterketa ruta','antzuola mendi lasterketa ruta','mendi ruta','lasterketa ruta','ruta')
 @section('canonical','http://www.a8m.kodekoop.eus/ibilbidea')
 
 @section('header') 

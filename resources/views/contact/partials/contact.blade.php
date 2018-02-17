@@ -10,7 +10,7 @@
 
         <div class="inner-left">
 
-            <p class="email"><a href="mailto:antzuolako8miliak@gmail.com">antzuolako8miliak@gmail.com</a></p>
+            <p class="email"><a href="mailto:antzuolako8m@gmail.com">antzuolako8m@gmail.com</a></p>
 
           </div>
 
