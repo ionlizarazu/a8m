@@ -4,7 +4,7 @@
 <!-- image Gallery -->
 <div class="wrapper">
     <div class="">
-      <h1 class="page-header">2017 Argazki galeria</h1>
+      <h1 class="page-header">{{$year}} Argazki galeria</h1>
 
       <div class="grid">
         <div id="js-filters-masonry" class="cbp-l-filters-work">

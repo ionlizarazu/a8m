@@ -70,7 +70,7 @@ class FlickrController extends Controller
                 $galleryImages[] =array('gallery_id'=>$gallery['gallery_id'],'title'=>$galleryName,'images' => $imgTitleUrls);
             }
          }
-         return view('galeria.galeria')->with('galleryImages', $galleryImages);
+         return view('galeria.galeria')->with('galleryImages', $galleryImages)->with('year',$year);
     }
 
     /**
