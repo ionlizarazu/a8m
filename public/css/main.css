@@ -246,6 +246,9 @@ margin:0.5%;}
 .footer a:hover{ color:#FFF}
 
 .footer img{ margin:0 auto}
+.error {
+	color:red;
+}
 
 .footer label{ text-align:center; color:#FFF;font-family: 'Caveat Brush', serif; text-transform:uppercase; letter-spacing:2px; font-size:21px; position:relative;width: 100%;font-size: 24px;padding-top: 0.5%;}
 
