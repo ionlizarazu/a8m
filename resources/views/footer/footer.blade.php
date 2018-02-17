@@ -1,7 +1,7 @@
 <!-- footer -->
 
 <footer class="footer">
-  <h3>Antzuolako 8 miliak</h3>
+  <label>Antzuolako 8 miliak</label>
   <div class="container footer-bot">
     <div class="row"> 
       
@@ -42,3 +42,4 @@
     </div>
   </div>
 </footer>
+
