@@ -16,6 +16,9 @@ return [
     |
     */
 
+
+
+
     'driver' => env('MAIL_DRIVER', 'smtp'),
 
     /*
@@ -29,7 +32,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST', 'smtp.gmail.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,9 +59,11 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'antzuolako8m@gmail.com'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
+
+
 
     /*
     |--------------------------------------------------------------------------

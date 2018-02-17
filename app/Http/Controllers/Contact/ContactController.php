@@ -48,7 +48,7 @@ class ContactController extends Controller
 
         Mail::send('contact.partials.send', $data, function($message) use ($data){
             $message->from($data['email'],$data['name']);
-            $message->to('kodekoop@gmail.com')->subject('Contacto: '.$data['subject']);
+            $message->to('antzuolako8m@gmail.com')->subject('Contacto: '.$data['subject']);
         });
 
         if (Mail::failures()) {

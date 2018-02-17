@@ -6,7 +6,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 <link rel="shortcut icon" href="{{ asset('images/ikonoa.png')}}" type="image/x-icon">
-<title>Antzuolako 8 miliak</title>
+<title> @yield('title')</title>
+<meta name="description" content="@yield('description')">
+<meta name="keywords" content="@yield('keywords')">
 <!-- Normalize -->
 <link rel="stylesheet" href="{{ asset('css/assets/normalize.css') }}" type="text/css">
 <!-- Bootstrap -->
