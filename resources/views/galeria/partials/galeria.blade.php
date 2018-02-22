@@ -11,12 +11,12 @@
             @foreach($galleryImages as $zones)
                 @if ($i == 0)     
                 <?php $firstkey = $zones['gallery_id'];?>
-                <div data-filter=".{{ $zones['gallery_id'] }}" class="cbp-filter-item-active cbp-filter-item">
+                <div data-filter=".{{ $zones['gallery_id'] }}" class="cbp-filter-item-active cbp-filter-item" onclick="gtag('event', 'galeria',{'event_category': 'aldaketa','event_label': '{{ $zones['title'] }}'});">
                   {{ $zones['title'] }}
                   <div class="cbp-filter-counter"></div>               
                 </div>  
                 @else
-                <div data-filter=".{{ $zones['gallery_id'] }}" class="cbp-filter-item">
+                <div data-filter=".{{ $zones['gallery_id'] }}" class="cbp-filter-item" onclick="gtag('event', 'galeria',{'event_category': 'aldaketa','event_label': '{{ $zones['title'] }}'});">
                   {{ $zones['title'] }}
                   <div class="cbp-filter-counter"></div>
                 </div>
