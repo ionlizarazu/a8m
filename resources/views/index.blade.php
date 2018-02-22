@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="no-js"  lang="en">
+<html class="no-js"  lang="eu">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,7 @@
 <title> @yield('title')</title>
 <meta name="description" content="@yield('description')">
 <meta name="keywords" content="@yield('keywords')">
+<link rel="canonical" href="@yield('canonical')">
 <!-- Normalize -->
 <link rel="stylesheet" href="{{ asset('css/assets/normalize.css') }}" type="text/css">
 <!-- Bootstrap -->

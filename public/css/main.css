@@ -78,7 +78,7 @@ Version: 1.0
 
 body{ background-color:#FFF;font-family: 'Poppins', sans-serif; color:#848484; font-weight:300; font-size:14px; line-height:27px; overflow-x: none}
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, img, main {display: block}
+article, aside, details, figcaption, figure, footer, header, .hgroup, menu, nav, section, img, main {display: block}
 
 audio, canvas, video {display: inline-block;*display:inline;*zoom:1}
 
@@ -132,15 +132,15 @@ margin:0.5%;}
 
 .header.header-fixed-top .menu-expanded{ padding-top:15px}
 
-.header hgroup{ padding:0 15px; overflow:hidden}
+.header .hgroup{ padding:0 15px; overflow:hidden}
 
-.header hgroup h1{ padding:0; margin:0}
+.header .hgroup h1{ padding:0; margin:0}
 
-.header hgroup h1 a{ display:block; float:left; max-width:81px}
+.header .hgroup h1 a{ display:block; float:left; max-width:81px}
 
-.header hgroup span{ padding:0; margin:0}
+.header .hgroup span{ padding:0; margin:0}
 
-.header hgroup span a{ display:block; float:left; max-width:81px}
+.header .hgroup span a{ display:block; float:left; max-width:81px}
 
 .main-menu {background-color: transparent;position: fixed;width: 100%;height:100%;top: 0px;right: 0px;z-index:2;}
 

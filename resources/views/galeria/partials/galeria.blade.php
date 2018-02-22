@@ -1,6 +1,5 @@
 <script src="{{ asset('https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js')}}"></script> 
 <script type="text/javascript" src="{{ asset('js/cubeportfolio/js/jquery.cubeportfolio.min.js') }}"></script>
-
 <!-- image Gallery -->
 <div class="wrapper">
     <div class="">

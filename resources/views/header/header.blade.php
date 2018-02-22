@@ -1,7 +1,7 @@
 <!-- header -->
 <header id="header" class="header">
   <div class="container-fluid">
-    <hgroup>  
+    <div class="hgroup">  
       <!-- logo -->   
       <span><a  title="Antzuolako 8 milak"><img src="{{ asset('images/logo.png') }}" alt="Antzuolako 8 milak"/></a></span>
       <!-- logo -->    
@@ -32,7 +32,7 @@
         </div>
       </nav>     
       <!-- nav -->    
-    </hgroup>
+    </div>
   </div>
 </header>
 <!-- header -->
