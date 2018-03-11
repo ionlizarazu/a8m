@@ -10,7 +10,6 @@
             <?php $i=0; ?>
             @foreach($galleryImages as $zones)
                 @if ($i == 0)     
-                <?php $firstkey = $zones['gallery_id'];?>
                 <div data-filter=".{{ $zones['gallery_id'] }}" class="cbp-filter-item-active cbp-filter-item" onclick="gtag('event', 'galeria',{'event_category': 'aldaketa','event_label': '{{ $zones['title'] }}'});">
                   {{ $zones['title'] }}
                   <div class="cbp-filter-counter"></div>               
@@ -28,11 +27,11 @@
 
       <div id="js-grid-masonry" class="cbp">
         @foreach($galleryImages as $zones)              
-            @foreach($zones['images'] as $photos)
+            @foreach($zones['images'] as $photos)  
               <div class="cbp-item {{ $zones['gallery_id'] }}">
                 <a href="{{ $photos['url'] }}" class="cbp-caption cbp-lightbox">
                   <div>
-                    <img src="{{ $photos['url'] }}" alt="{{$photos['title']}}">
+                    <img src="{{ $photos['url'] }}" data-cbp-src="{{ $photos['url'] }}" alt="{{$photos['title']}}">
                   </div>
                   <div class="cbp-caption-activeWrap">
                     <div class="cbp-l-caption-alignLeft">
@@ -42,15 +41,15 @@
                     </div>        
                   </div>
                 </a>       
-              </div>
+              </div> 
             @endforeach
         @endforeach
       </div>
-      <script type="text/javascript">
-$('#js-grid-masonry').cubeportfolio({
+<script type="text/javascript">
+  $('#js-grid-masonry').cubeportfolio({
     filters: '#js-filters-masonry',
     layoutMode: 'grid',
-    defaultFilter: '.{{$firstkey}}',
+    defaultFilter: '.{{$currentKey}}',
     animationType: 'slideDelay',
     gapHorizontal: 20,
     gapVertical: 20,
@@ -81,6 +80,7 @@ $('#js-grid-masonry').cubeportfolio({
     lightboxTitleSrc: 'data-title',
 });
 </script> 
-          @include('footer.partners') 
+    @include('footer.partners') 
     </div>
 </div>
+

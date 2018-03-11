@@ -31,12 +31,12 @@ class FlickrController extends Controller
      */
     public function route()
     {
-        Mapper::map(43.104551, -2.361174, ['marker' => false]);
+       /* Mapper::map(43.104551, -2.361174, ['marker' => false]);
 
         $json = Storage::disk('local')->get('coordinates.json');
         $coordinates = json_decode($json, true);
 
-        Mapper::polyline($coordinates['coordinates']);
+        Mapper::polyline($coordinates['coordinates']);*/
         return view('route.route');
     }
 
@@ -70,7 +70,10 @@ class FlickrController extends Controller
                 $galleryImages[] =array('gallery_id'=>$gallery['gallery_id'],'title'=>$galleryName,'images' => $imgTitleUrls);
             }
          }
-         return view('galeria.galeria')->with('galleryImages', $galleryImages)->with('year',$year);
+
+        $currentKey=$galleryImages['0']['gallery_id'];
+
+         return view('galeria.galeria')->with('galleryImages', $galleryImages)->with('year',$year)->with('currentKey',$currentKey);
     }
 
     /**
